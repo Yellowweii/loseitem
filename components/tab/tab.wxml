@@ -1,0 +1,10 @@
+<view class="tab">
+		<view class="tab-item {{i === 0 ? '' : 'tab-default'}}" data-i="{{0}}" bindtap="click">
+				<text>寻主</text>
+				<view wx:if="{{i === 0}}" class="tab-line"></view>
+		</view>
+		<view class="tab-item {{i === 1 ? '' : 'tab-default'}}" data-i="{{1}}" bindtap="click">
+				<text>寻物</text>
+				<view wx:if="{{i === 1}}" class="tab-line"></view>
+		</view>
+</view>

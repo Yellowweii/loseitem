@@ -1,0 +1,22 @@
+.search{
+	height: 100rpx;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-content{
+		height: 80rpx;
+		background-color: #f3f3f3;
+		width: 90%;
+		border-radius: 40rpx;
+		color: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.search-content .img {
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 10rpx;
+}

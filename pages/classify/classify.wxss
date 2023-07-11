@@ -1,0 +1,50 @@
+.classify-container{
+	display: flex;
+	background-color: #fff;
+}
+.classify-left{
+	display: flex;
+	min-width: 250rpx;
+	flex-direction: column;
+	background-color: #fff;
+	position: relative;
+}
+.classify-left-item{
+		background-color: #f3f3f3;
+		padding: 40rpx 20rpx;
+		text-align: center;
+		position: relative;
+}
+.classify-line{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0;
+	height: 80rpx;
+	border-left: 8rpx solid #ff70b4;
+}
+.classify-select{
+	background-color: #fff;
+}
+.classify-right{
+		display: flex;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		width: 100%;
+}
+.classify-right-item{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 33.3%;
+		padding: 20rpx 0;
+}
+.classify-right image{
+		width: 100rpx;
+		height: 100rpx;
+}
+.bottom{
+	height: 100rpx;
+}

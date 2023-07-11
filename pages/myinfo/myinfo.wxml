@@ -1,0 +1,27 @@
+<view class="body">
+	<view class="info">
+		<view class="info-item">
+			<text>头像</text>
+			<van-image round width="150rpx" height="150rpx" src="{{userinfo.avatarUrl}}"/>
+		</view>
+		<view class="info-item">
+			<text>昵称</text>
+			<text>{{userinfo.nickName}}</text>
+		</view>
+		<view class="info-item">
+			<text>性别</text>
+			<text>男</text>
+		</view>
+		<view class="info-item block">
+			<text>联系方式</text>
+	   <view wx:if="{{flag === false}}">{{phone}}</view>
+			<image wx:if="{{flag === false}}" class="edit" src="/images/edit.png" bindtap="edit"></image>
+			<block wx:else>
+					<input value="{{phone}}" bindinput="getphone" type="text"placeholder="请输入联系方式："/>
+					<image bindtap="delete" wx:if="{{phone !== ''}}" class="close" src="/images/close.png"></image>
+					<view bindtap="edit">取消</view>
+			</block>
+		</view>
+		<button bindtap="save" wx:if="{{flag === true}}" class="btn">保存修改</button>
+	</view>
+</view>

@@ -1,0 +1,50 @@
+<view class="body">
+  <view class="top">
+    <van-icon bindtap="backpage" size="50rpx" name="cross" />
+    <button size="mini" bindtap="topublish">发布</button>
+  </view>
+  <view class="container">
+    <view class="type">
+      <view data-id="{{1}}" bindtap="click" class="type-item {{id === 1 ? 'type-select' : ''}}">寻主</view>
+      <view data-id="{{2}}" bindtap="click" class="type-item {{id === 2 ? 'type-select' : ''}}">寻物</view>
+    </view>
+    <view class="classify">
+      <text class="label">物品类别：</text>
+      <picker bindchange="bindMultiPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker-item">
+          <view wx:if="{{flag}}" class="select">
+            {{array[index]}}
+            <image catchtap="close" class="img" src="/images/close.png"></image>
+          </view>
+          <view wx:else class="empty" wx:else>
+            <text>请选择</text>
+            <van-icon size="40rpx" name="arrow-down" />
+          </view>
+        </view>
+      </picker>
+    </view>
+    <view class="input-list">
+      <input value="{{name}}" bindinput="getname" class="input-item" type="text" placeholder="请输入物品名称" />
+      <input value="{{time}}" bindinput="gettime" class="input-item" type="text" placeholder="请输入丢失拾取/时间" />
+      <input value="{{place}}" bindinput="getplace" class="input-item" type="text" placeholder="请输入丢失拾取/地点" />
+      <input value="{{phone}}" bindinput="getphone" class="input-item" type="text" placeholder="请输入联系方式" />
+    </view>
+    <view class="desc">
+      <textarea value="{{desc}}" bindinput="getdesc" placeholder="请输入物品描述"/>
+      <van-icon bindtap="delete" wx:if="{{desc !== ''}}" size="40rpx" name="cross"/>
+    </view>
+    <view class="upload">
+        <view class="upload-top">
+            <text>最多上传6张图片</text>
+            <text>{{imglist.length}}/6</text>
+        </view>
+        <view class="upload-list">
+          <view class="img-list" wx:for="{{imglist}}" wx:key="index">
+            <image class="img" src="{{item.tempFilePath}}"></image>
+            <image data-id="{{index}}" bindtap="closetwo" class="delete" src="/images/close.png"></image>
+          </view>
+          <image bindtap="upload" class="default" src="/images/upload.png"></image>
+        </view>
+    </view>
+  </view>
+</view>

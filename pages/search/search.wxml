@@ -1,0 +1,18 @@
+<view class="body">
+	<van-search  bind:change="getnumber" shape="round" placeholder="请输入搜索关键词" />
+<block wx:if="{{input === ''}}">
+	<view class="search-log">
+			<text>搜索历史</text>
+			<van-icon size="45rpx" name="delete-o" />
+	</view>
+	<view class="log-list">
+			<view class="log-item" wx:for="{{[1,2,3,4,5,6,7]}}" wx:key="index">身份证</view>
+	</view>
+</block>
+<view wx:else class="search-result">
+		<view class="search-item" wx:for="{{[1,2,3]}}" wx:key="index">
+				<text>身份证</text>
+				<van-icon size="40rpx" name="arrow" />
+		</view>
+</view>
+</view>

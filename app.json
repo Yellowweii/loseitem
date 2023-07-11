@@ -1,0 +1,70 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/collect/collect",
+    "pages/me/me",
+    "pages/mypublish/mypublish",
+    "pages/mycollect/mycollect",
+    "pages/myinfo/myinfo",
+    "pages/infodetail/infodetail",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/infodetailtest/infodetailtest",
+    "pages/infodetailtwo/infodetailtwo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff70b4",
+    "navigationBarTitleText": "失物招领",
+    "navigationBarTextStyle":"white"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "searchinput": "/components/serchinput/serchinput",
+    "tab": "/components/tab/tab",
+    "viewcardone": "/components/viewcardone/viewcardone",
+    "viewcardtwo": "/components/viewcardtwo/viewcardtwo",
+    "van-image": "@vant/weapp/image/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./images/index.png",
+      "selectedIconPath": "./images/index-ed.png"
+    },
+    {
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "iconPath": "./images/classify.png",
+      "selectedIconPath": "./images/classify-ed.png"
+    },
+    {
+      "pagePath": "pages/collect/collect",
+      "text": "收集",
+      "iconPath": "./images/collect.png",
+      "selectedIconPath": "./images/collect-ed.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "./images/me.png",
+      "selectedIconPath": "./images/me-ed.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

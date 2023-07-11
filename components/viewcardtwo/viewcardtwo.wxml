@@ -1,0 +1,14 @@
+<view class="lose">
+		<view class="lose-item" data-index="{{index}}" bindtap="todetail" wx:for="{{infotwo}}" wx:key="index">
+				<image class="img" src="{{item.imglist[0].tempFilePath}}" mode="aspectFill"></image>
+				<view class="lose-content">
+						<text class="name">{{item.name}}</text>
+						<text class="place">{{item.place}}</text>
+						<text class="time">{{item.time}}</text>
+						<text class="desc">{{item.desc}}</text>
+						<text class="publish-time">{{m1.formatTime(item.publishtime)}}</text>
+				</view>
+		</view>
+</view>
+<wxs src="/utils/tools.wxs" module="m1"></wxs>
+

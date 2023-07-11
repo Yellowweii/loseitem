@@ -1,0 +1,30 @@
+<view class="body">
+	<swiper autoplay indicator-dots interval="2000" circular>
+			<swiper-item wx:for="{{imglist}}" wx:key="index">
+				<image src="{{item}}"></image>
+			</swiper-item>
+		</swiper>
+	<view class="name">一串钥匙</view>
+	<view class="container">
+		<view class="date item">
+			<text class="label">拾到时间</text>
+			<text>12月25日</text>
+		</view>
+		<view class="place item">
+			<text class="label">拾到地点</text>
+			<text>啬园校区</text>
+		</view>
+		<view class="desc item">如图</view>
+	</view>
+	<view class="bottom">
+		<view class="bottom-left" bindtap="getphone">
+			<image class="img" src="/images/评论.png"></image>
+			<text>点击联系我</text>
+		</view>
+		<view class="bottom-right" bindtap="tocollect">
+			<van-icon wx:if="{{flag === true}}" color="#ff70b4" size="40rpx" name="star-o" />
+			<van-icon wx:else size="40rpx" color="#ff70b4" name="star" />
+			<text>收藏</text>
+		</view>
+	</view>
+</view>

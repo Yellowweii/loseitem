@@ -1,0 +1,33 @@
+<view class="body">
+	<van-notice-bar left-icon="volume-o" text="同学们可以在这个平台上发布失物招领信息,有任何问题可以私信后台管理。"/>
+	<searchinput bindtap="tosearch"></searchinput>
+	<swiper autoplay indicator-dots interval="2000" circular>
+		<swiper-item wx:for="{{imglist}}" wx:key="index">
+			<image src="{{item}}"></image>
+		</swiper-item>
+	</swiper>
+	<van-tabs swipeable animated="true">
+  <van-tab title-style="font-size: 30rpx" title="寻主"><viewcardone></viewcardone>
+	<view bindtap="todetail" class="lose-item" wx:for="{{[1]}}" wx:key="index">
+				<image class="img" src="/images/picture.jpg" mode="aspectFill"></image>
+				<view class="lose-content">
+						<text class="name">身份证</text>
+						<text class="place">啬园校区西操</text>
+						<text class="time">2023年4月</text>
+						<text class="desc">这是我在啬园校区西操散步时发现的身份证</text>
+						<text class="publish-time">2023-4-30 18:52:09</text>
+				</view>
+		</view></van-tab>
+  <van-tab title-style="font-size: 30rpx" title="寻物"><viewcardtwo></viewcardtwo>
+	<view bindtap="todetail" class="lose-item" wx:for="{{[1]}}" wx:key="index">
+				<image class="img" src="/images/picture.jpg" mode="aspectFill"></image>
+				<view class="lose-content">
+						<text class="name">身份证</text>
+						<text class="place">啬园校区西操</text>
+						<text class="time">2023年4月</text>
+						<text class="desc">这是我在啬园校区西操散步时发现的身份证</text>
+						<text class="publish-time">2023-4-30 18:52:09</text>
+				</view>
+		</view></van-tab>
+</van-tabs>
+</view>

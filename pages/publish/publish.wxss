@@ -1,0 +1,114 @@
+page{
+  background-color: #fff;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  border-bottom: 5rpx solid #f3f3f3;
+}
+.top button{
+  margin: 0;
+  background-color: #ff70b4;
+  color: #fff;
+  border-radius: 40rpx;
+  width: 150rpx;
+}
+.container{
+  padding: 30rpx 35rpx 50rpx 35rpx;
+}
+.type{
+  display: flex;
+}
+.type-item{
+  background-color: #eee;
+  padding: 20rpx 80rpx;
+  border: 1px solid #aaa;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.type-select{
+  background-color: #ff70b4;
+  color: #fff;
+}
+.classify{
+  margin-top: 50rpx;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.label{
+  margin-right: 20rpx;
+  white-space: nowrap;
+}
+picker{
+  width: 100%;
+}
+.empty,.select{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2rpx solid #eee;
+  flex: 1;
+  padding: 15rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  white-space: nowrap;
+}
+.select .img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.input-list{
+  padding: 30rpx 15rpx;
+  padding-top: 80rpx;
+  border-bottom: 5rpx solid #f3f3f3;
+}
+.input-list .input-item{
+    margin-bottom: 50rpx;
+}
+.desc{
+  padding: 30rpx 15rpx;
+  border-bottom: 5rpx solid #f3f3f3;
+  position: relative;
+}
+.desc van-icon{
+  position: absolute;
+  right: 20rpx;
+  top: 30rpx;
+  z-index: 9999 !important;
+}
+.upload{
+  padding-top: 20rpx;
+}
+.upload .upload-top{
+  display: flex;
+  justify-content: space-between;
+}
+.upload-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.upload-list .default,.img-list{
+  width: 33.3%;
+  height: 200rpx;
+}
+.img-list .img{
+  width: 100%;
+  height: 100%;
+}
+.img-list{
+  position: relative;
+}
+.img-list .delete{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  z-index: 9999;
+}

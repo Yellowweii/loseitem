@@ -1,0 +1,5 @@
+<van-tabs swipeable animated="true">
+  <van-tab title-style="font-size: 30rpx" title="寻主"><viewcardone></viewcardone></van-tab>
+  <van-tab title-style="font-size: 30rpx" title="寻物 2"><viewcardtwo></viewcardtwo></van-tab>
+</van-tabs>
+

@@ -1,0 +1,18 @@
+<view class="body">
+	<searchinput bindtap="tosearch"></searchinput>
+	<view class="classify-container">
+		<view class="classify-left">
+			<view class="classify-left-item {{select === index ? 'classify-select' : ''}}" wx:for="{{asidebar}}" wx:key="index" bindtap="click" data-id="{{index}}">
+				<text>{{item}}</text>
+				<view wx:if="{{select === index}}" class="classify-line"></view>
+			</view>
+		</view>
+		<view class="classify-right">
+			<view class="classify-right-item" wx:for="{{[1,2,3,4,5,6]}}" wx:key="index">
+				<image src="../../images/index.png"></image>
+				<text>身份证</text>
+			</view>
+		</view>
+	</view>
+	<view class="bottom"></view>
+</view>

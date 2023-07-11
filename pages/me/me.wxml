@@ -1,0 +1,23 @@
+<view class="body" style="background-color: {{color}};">
+	<view wx:if="{{login === false}}" class="unlogin">
+		<van-image round width="150rpx" height="150rpx" src="/images/me.png" fit="cover" />
+		<button class="btn" bindtap="getinfo">微信一键登录</button>
+	</view>
+	<view wx:else class="login">
+		<view class="info">
+			<van-image round width="200rpx" height="200rpx" src="{{userinfo.avatarUrl}}" fit="cover" />
+			<text class="txt">{{userinfo.nickName}}</text>
+		</view>
+		<view class="cell">
+			<view class="cell-item" wx:for="{{celllist}}" wx:key="index" bindtap="todetail" data-page="{{item.page}}">
+				<view class="cell-left">
+					<image class="img" src="{{item.src}}"></image>
+					<text class="txt">{{item.text}}</text>
+				</view>
+				<view class="cell-right">
+					<van-icon size="60rpx" name="arrow" />
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,45 @@
+.body{
+	height: 100vh;
+	background-color: #fff;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 40rpx;
+}
+.info-item{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	align-items: center;
+	height: 200rpx;
+	border-bottom: 4rpx solid #f3f3f3;
+}
+.info-item .edit{
+	width: 40rpx;
+	height: 40rpx;
+}
+.info-item input{
+	border: 2px solid #d3d3d3;
+	padding: 15rpx 5rpx;
+	margin-left: 50rpx;
+}
+.block{
+	position: relative;
+}
+.info-item .close{
+	position: absolute;
+	width: 40rpx;
+	height: 40rpx;
+	right: 100rpx;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.btn{
+		width: 80%;
+		background-color: #ff70b4;
+		color: #fff;
+		margin-top: 50rpx;
+}
