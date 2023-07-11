@@ -17,7 +17,8 @@ npm install
 
 
 ##### 最后，就可以看到主页面如下图
+![1](https://github.com/yellowweii/loseitem/assets/138266079/d86fb4f4-d3a1-45a9-a110-993bf2326964)
 
-<img src="https://github.com/yellowweii/loseitem/assets/138266079/17a5a3ab-3d32-4849-b321-5be096df949c style="zoom:33%;" />
-<img src="https://github.com/yellowweii/loseitem/assets/138266079/e477e34c-f91e-452b-a362-192543e20a94 style="zoom:33%;" />
-<img src="https://github.com/yellowweii/loseitem/assets/138266079/bc2320ca-3222-4811-875f-4b18ab2ddc49 style="zoom:33%;" />
+![2](https://github.com/yellowweii/loseitem/assets/138266079/da570259-2d3f-456d-9a78-84f930cde60a)
+![3](https://github.com/yellowweii/loseitem/assets/138266079/36e4a9b3-c7aa-4a61-8173-43671855fcca)
+
